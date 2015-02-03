@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="Valgfagsprojekt-PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>dk.cphbusiness.sem4.model.Runde2res</class>
+    <class>dk.cphbusiness.sem4.model.Valgfag</class>
+    <class>dk.cphbusiness.sem4.model.Runde2</class>
+    <class>dk.cphbusiness.sem4.model.Studerende</class>
+    <class>dk.cphbusiness.sem4.model.Runde1res</class>
+    <class>dk.cphbusiness.sem4.model.Runde1</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@delfi.lyngbyes.dk:1521:knord"/>
+      <property name="javax.persistence.jdbc.password" value="kncady2"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.user" value="kncady2"/>
+    </properties>
+  </persistence-unit>
+</persistence>
